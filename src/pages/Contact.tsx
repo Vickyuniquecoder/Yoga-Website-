@@ -57,7 +57,7 @@ export default function Contact() {
                 </div>
                 <div>
                   <h4 className="text-sm uppercase tracking-widest text-gray-500 font-semibold mb-1">Email</h4>
-                  <a href="mailto:vickypandit3214@gmail.com" className="text-lg text-ink font-medium hover:text-accent transition-colors">vickypandit3214@gmail.com</a>
+                  <a href="mailto:manishasharma2195@gmail.com" className="text-lg text-ink font-medium hover:text-accent transition-colors">manishasharma2195@gmail.com</a>
                 </div>
               </div>
 
