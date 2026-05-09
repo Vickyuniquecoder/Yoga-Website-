@@ -1,6 +1,7 @@
 import { motion } from 'motion/react';
 import { Link } from 'react-router-dom';
 import { Sparkles, ArrowRight, Check } from 'lucide-react';
+import SEO from '../components/SEO';
 
 const SERVICES = [
   {
@@ -48,6 +49,11 @@ const SERVICES = [
 export default function Services() {
   return (
     <div className="bg-primary min-h-screen pb-24">
+      <SEO 
+        title="Our Services"
+        description="Explore our range of yoga services including home yoga classes, personal training, online sessions, and weight loss programs in Ahmedabad."
+        url="/services"
+      />
       {/* Page Header */}
       <section className="bg-ink text-white py-24 px-6 text-center relative overflow-hidden">
         <div className="absolute inset-0 opacity-20 bg-[url('https://images.unsplash.com/photo-1600618528240-fb9fc964b853?q=80&w=2070&auto=format&fit=crop')] bg-cover bg-center mix-blend-overlay"></div>
@@ -83,7 +89,7 @@ export default function Services() {
               className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center"
             >
               <div className={`aspect-[4/3] rounded-[2rem] overflow-hidden shadow-lg ${index % 2 === 1 ? 'lg:order-2' : ''}`}>
-                <img src={service.image} alt={service.title} className="w-full h-full object-cover hover:scale-105 transition-transform duration-700" />
+                <img src={service.image} alt={service.title} loading="lazy" className="w-full h-full object-cover hover:scale-105 transition-transform duration-700" />
               </div>
               
               <div className={`flex flex-col justify-center ${index % 2 === 1 ? 'lg:order-1' : ''}`}>

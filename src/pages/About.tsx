@@ -1,5 +1,6 @@
 import { motion } from 'motion/react';
 import { Target, Eye, Award, CheckCircle2 } from 'lucide-react';
+import SEO from '../components/SEO';
 
 const FADE_UP = {
   hidden: { opacity: 0, y: 30 },
@@ -9,6 +10,11 @@ const FADE_UP = {
 export default function About() {
   return (
     <div className="bg-primary min-h-screen pb-24">
+      <SEO 
+        title="About Us"
+        description="Learn more about Manisha Sharma, a certified Yoga Professional in Ahmedabad dedicated to helping you achieve a sustainable healthy lifestyle through customized yoga practices."
+        url="/about"
+      />
       {/* Page Header */}
       <section className="bg-white py-20 px-6 text-center border-b border-gray-100">
         <motion.h1 
@@ -78,7 +84,8 @@ export default function About() {
             <div className="relative aspect-[3/4] rounded-t-[100px] rounded-b-3xl overflow-hidden shadow-2xl">
               <img 
                 src="https://images.unsplash.com/photo-1549476464-37392f717541?q=80&w=1964&auto=format&fit=crop" 
-                alt="Manisha Sharma - Yoga Trainer" 
+                alt="Manisha Sharma - Yoga Trainer in Ahmedabad" 
+                loading="lazy"
                 className="w-full h-full object-cover"
               />
               <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-ink/80 pt-20 pb-8 px-8 text-white">

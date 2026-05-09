@@ -1,5 +1,6 @@
 import { motion } from 'motion/react';
 import { Mail, Phone, MapPin, Clock, Send, MessageCircle } from 'lucide-react';
+import SEO from '../components/SEO';
 
 export default function Contact() {
   const handleWhatsAppClick = () => {
@@ -9,6 +10,11 @@ export default function Contact() {
 
   return (
     <div className="bg-primary min-h-screen pb-24">
+      <SEO 
+        title="Contact Us"
+        description="Get in touch with Lotus Yoga & Wellness in Ahmedabad. Book your home yoga classes, meditation sessions, or personal training today."
+        url="/contact"
+      />
       {/* Page Header */}
       <section className="bg-white py-20 px-6 text-center border-b border-gray-100">
         <motion.h1 

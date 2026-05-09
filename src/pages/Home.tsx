@@ -1,6 +1,7 @@
 import { motion } from 'motion/react';
 import { Link } from 'react-router-dom';
 import { ArrowRight, Leaf, Heart, Wind, Brain, CheckCircle2, Star, Phone } from 'lucide-react';
+import SEO from '../components/SEO';
 
 const FADE_UP = {
   hidden: { opacity: 0, y: 30 },
@@ -8,16 +9,58 @@ const FADE_UP = {
 };
 
 export default function Home() {
+  const schema = {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "Lotus Yoga & Wellness",
+    "image": "https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?q=80&w=2620&auto=format&fit=crop",
+    "@id": "",
+    "url": "https://lotusyogaahmedabad.com",
+    "telephone": "+919368640175",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Bodakdev",
+      "addressLocality": "Ahmedabad",
+      "addressRegion": "Gujarat",
+      "addressCountry": "IN"
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": 23.0348,
+      "longitude": 72.5028
+    },
+    "openingHoursSpecification": {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": [
+        "Monday",
+        "Tuesday",
+        "Wednesday",
+        "Thursday",
+        "Friday",
+        "Saturday"
+      ],
+      "opens": "06:00",
+      "closes": "20:00"
+    }
+  };
+
   return (
     <div className="overflow-hidden">
+      <SEO 
+        title="Home"
+        description="Transform Your Body & Mind with Professional Yoga Training in Ahmedabad. Experience personalized home yoga classes, personal training, and wellness sessions."
+        url="/"
+        schema={schema}
+      />
       {/* Hero Section */}
       <section className="relative min-h-[90vh] flex items-center justify-center">
         {/* Background Image with Overlay */}
         <div className="absolute inset-0 z-0">
           <img 
             src="https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?q=80&w=2620&auto=format&fit=crop" 
-            alt="Woman practicing yoga outdoors in morning sunlight" 
+            alt="Woman practicing yoga outdoors in morning sunlight in Ahmedabad" 
             className="w-full h-full object-cover"
+            fetchPriority="high"
           />
           <div className="absolute inset-0 bg-ink/40"></div>
         </div>
@@ -158,6 +201,7 @@ export default function Home() {
                   <img 
                     src={service.image} 
                     alt={service.title} 
+                    loading="lazy"
                     className="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700"
                   />
                 </div>
@@ -218,7 +262,8 @@ export default function Home() {
               <div className="aspect-[4/5] md:aspect-square lg:aspect-[4/5] rounded-[2rem] overflow-hidden border-8 border-primary">
                 <img 
                   src="https://images.unsplash.com/photo-1506126613408-eca07ce68773?q=80&w=2699&auto=format&fit=crop" 
-                  alt="Yoga meditation" 
+                  alt="Yoga meditation practice in Ahmedabad" 
+                  loading="lazy"
                   className="w-full h-full object-cover"
                 />
               </div>

@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
 import { X } from 'lucide-react';
+import SEO from '../components/SEO';
 
 const GALLERY_IMAGES = [
   { src: "https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?q=80&w=2620&auto=format&fit=crop", alt: "Yoga outdoors", category: "Outdoor" },
@@ -19,6 +20,11 @@ export default function Gallery() {
 
   return (
     <div className="bg-primary min-h-screen pb-24">
+      <SEO 
+        title="Gallery"
+        description="View glimpses of our serene yoga practice sessions and joyful wellness journey in Ahmedabad."
+        url="/gallery"
+      />
       {/* Page Header */}
       <section className="bg-white py-20 px-6 text-center border-b border-gray-100">
         <motion.h1 
@@ -53,6 +59,7 @@ export default function Gallery() {
               <img 
                 src={img.src} 
                 alt={img.alt} 
+                loading="lazy"
                 className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
               />
               <div className="absolute inset-0 bg-ink/0 group-hover:bg-ink/30 transition-colors duration-300 flex items-center justify-center">
