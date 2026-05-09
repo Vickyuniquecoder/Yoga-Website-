@@ -15,7 +15,7 @@ export default function Home() {
     "name": "Lotus Yoga & Wellness",
     "image": "https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?q=80&w=2620&auto=format&fit=crop",
     "@id": "",
-    "url": "https://lotusyogaahmedabad.com",
+    "url": "https://yogwellness.netlify.app",
     "telephone": "+919368640175",
     "address": {
       "@type": "PostalAddress",

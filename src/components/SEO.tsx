@@ -26,11 +26,11 @@ export default function SEO({
       <title>{fullTitle}</title>
       <meta name="description" content={description} />
       <meta name="keywords" content={keywords} />
-      <link rel="canonical" href={`https://lotusyogaahmedabad.com${url}`} />
+      <link rel="canonical" href={`https://yogwellness.netlify.app${url}`} />
 
       {/* Open Graph / Facebook */}
       <meta property="og:type" content="website" />
-      <meta property="og:url" content={`https://lotusyogaahmedabad.com${url}`} />
+      <meta property="og:url" content={`https://yogwellness.netlify.app${url}`} />
       <meta property="og:title" content={fullTitle} />
       <meta property="og:description" content={description} />
       <meta property="og:image" content={image} />
@@ -38,7 +38,7 @@ export default function SEO({
 
       {/* Twitter */}
       <meta name="twitter:card" content="summary_large_image" />
-      <meta name="twitter:url" content={`https://lotusyogaahmedabad.com${url}`} />
+      <meta name="twitter:url" content={`https://yogwellness.netlify.app${url}`} />
       <meta name="twitter:title" content={fullTitle} />
       <meta name="twitter:description" content={description} />
       <meta name="twitter:image" content={image} />
