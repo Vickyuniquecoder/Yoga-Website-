@@ -6,7 +6,7 @@ import SEO from '../components/SEO';
 const GALLERY_IMAGES = [
   { src: "https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?q=80&w=2620&auto=format&fit=crop", alt: "Yoga outdoors", category: "Outdoor" },
   { src: "https://images.unsplash.com/photo-1599901860904-17e6ed7083a0?q=80&w=2070&auto=format&fit=crop", alt: "Home Yoga Session", category: "Indoor" },
-  { src: "https://images.unsplash.com/photo-1506126613408-eca07ce68773?q=80&w=2699&auto=format&fit=crop", alt: "Meditation pose", category: "Meditation" },
+  { src: "https://images.unsplash.com/photo-1545205597-3d9d02c29597?q=80&w=2070&auto=format&fit=crop", alt: "Meditation pose", category: "Meditation" },
   { src: "https://images.unsplash.com/photo-1575052814086-f385e2e2ad1b?q=80&w=2070&auto=format&fit=crop", alt: "Personal training pose adjustment", category: "Training" },
   { src: "https://images.unsplash.com/photo-1603988363607-e1e4a66962c6?q=80&w=2070&auto=format&fit=crop", alt: "Group yoga class online", category: "Group" },
   { src: "https://images.unsplash.com/photo-1512621776951-a57141f2eefd?q=80&w=2070&auto=format&fit=crop", alt: "Healthy lifestyle green juice", category: "Lifestyle" },

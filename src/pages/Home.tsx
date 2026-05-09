@@ -261,7 +261,7 @@ export default function Home() {
             >
               <div className="aspect-[4/5] md:aspect-square lg:aspect-[4/5] rounded-[2rem] overflow-hidden border-8 border-primary">
                 <img 
-                  src="https://images.unsplash.com/photo-1506126613408-eca07ce68773?q=80&w=2699&auto=format&fit=crop" 
+                  src="https://images.unsplash.com/photo-1524863479829-916d8e77f114?q=80&w=2070&auto=format&fit=crop" 
                   alt="Yoga meditation practice in Ahmedabad" 
                   loading="lazy"
                   className="w-full h-full object-cover"
