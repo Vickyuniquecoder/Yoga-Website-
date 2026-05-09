@@ -22,9 +22,6 @@ export default function SEO({
 
   return (
     <Helmet>
-      {/* Google Site Verification */}
-      <meta name="google-site-verification" content="GxqS48AJnwjOcY1cpn7ARSV6WP1kg_I5atI8pcDr4vo" />
-
       {/* Basic HTML Meta Tags */}
       <title>{fullTitle}</title>
       <meta name="description" content={description} />
